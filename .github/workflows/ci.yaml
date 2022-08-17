@@ -19,4 +19,21 @@ jobs:
 
       - name: Run Tests 
         run: npm run ci:test
+
+  tests: 
+    name: Lint and test 
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Checkout code 
+        uses: actions/checkout@v2
+
+      - name: Install packages 
+        run: npm ci
+
+      - name: Run ESlint 
+        run: npm run ci:lint 
+
+      - name: Run Tests 
+        run: npm run ci:test
       
