@@ -3,7 +3,7 @@ module.exports = {
     rules: [{
       test: /\.js%/,
       exclude: /node_modules/,
-      use: 'babe-loader',
+      use: 'bab-loader',
     },
     ],
   },
