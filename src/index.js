@@ -1,4 +1,4 @@
-const attack = require('./attack');
+import attack from './attack';
 
 console.log(
   attack('Walrus', 24),
