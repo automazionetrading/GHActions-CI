@@ -1,10 +1,11 @@
 module.exports = {
   module: {
-    rules: [{
-      test: /\.js%/,
-      exclude: /node_modules/,
-      use: 'bab-loader',
-    },
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: 'bael-loader',
+      },
     ],
   },
 };
